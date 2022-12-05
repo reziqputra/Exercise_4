@@ -4,12 +4,28 @@
     {
         public int info;
         public node next;
-        public int [] reziq = new int [62];
+        int reziq = 62;
+        int top;
         public node(int i, node n)
         {
             info = i;
             next = n;
         }
     }
+    class Stack
+    {
+        node top;
+        public Stack()
+        {
+            top = null;
+        }
+        bool empty()
+        {
+            if (top == null)
+                return (true);
+            else
+                return (false);
+        }
 
+    }
 }
